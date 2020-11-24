@@ -9,34 +9,26 @@ import egg3 from './assets/egg03.jpg';
 let ImageArray=[egg1,egg2,egg3];
 var imgNum = ImageArray.length
 
-let MsgArray=["あ","い","う","え"];
-var  eggMsg  = MsgArray.length
+let eggMsg;
 
   
 
 
 export default function App() {
   var [count, setCount] = useState(100);
-  // var [message, setMessage] = useState("Clash!!!");
   
 
-
-  
   imgNum=0;
-  // eggMsg=0;
   eggMsg="Clash!!!";
   if(count <= 75){
-    // eggMsg=1;
     eggMsg="Clash!Clash!";
     
   } if(count <= 50){
     imgNum=1;
-    // eggMsg=2;
     eggMsg="いいぞ！！";
     
   }if(count<=25){
     eggMsg="やったれ！！";
-    
     
     
   }if(count===0){
@@ -52,7 +44,6 @@ export default function App() {
 }
 
 // else ifだと動かない
-// 配列だと動かない
 
 
 
